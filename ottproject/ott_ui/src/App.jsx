@@ -1,16 +1,21 @@
 import './App.scss';
 import { useState } from 'react';
 import InputField from './components/InputField';
-import NavBar from './components/NavBar';
 import CustomButton from './components/CustomButton';
 import AppRoutes from './Routes';
+import NavBar from './components/NavBar';
+// import Categories from './pages/Categories';
+
+
 
 function App() {
   
 return (
   <div>
-  {/* <NavBar />
-   <form onSubmit={handleSubmit}>
+   <NavBar />
+ 
+ 
+   {/* <form onSubmit={handleSubmit}>
         <InputField
             label="Email"
             type="email"
@@ -45,8 +50,14 @@ return (
             onChange={handleChange}
         />
         <CustomButton label="Submit Form" type="submit" color="success" />
-    </form> */}
-    <AppRoutes />
+    </form> */} 
+    {/* <AppRoutes /> */}
+    {/* <NavBar /> */}
+    {/* <Profile /> */}
+    {/* <PricingPlans /> */}
+{/*   
+     <Categories/>  */}
+    <AppRoutes/>
   </div>
    
 );
