@@ -4,7 +4,7 @@ import InputField from './components/InputField';
 import CustomButton from './components/CustomButton';
 import AppRoutes from './Routes';
 import NavBar from './components/NavBar';
-// import Categories from './pages/Categories';
+import Categories from './pages/Categories';
 
 
 
@@ -55,8 +55,8 @@ return (
     {/* <NavBar /> */}
     {/* <Profile /> */}
     {/* <PricingPlans /> */}
-{/*   
-     <Categories/>  */}
+  
+     <Categories/>  
     <AppRoutes/>
   </div>
    
