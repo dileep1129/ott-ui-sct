@@ -1,0 +1,117 @@
+.navbar{
+    background-color: rgb(15, 15, 15);
+    display: grid;
+    grid-template-columns:1fr 1fr  1fr 1fr 1fr;
+}
+.app-container{
+    background-color: rgb(15, 15, 15);
+
+}
+  h1{
+    color: whitesmoke;
+    padding-left: 30px;
+  }
+  h3{
+    color: whitesmoke;
+    padding-left: 30px;
+
+  }
+h2{
+    color: whitesmoke;
+    background: linear-gradient(to right, #218621, #83491d); 
+    display: inline-block;
+    text-align: center;
+    padding-left: 20px;
+    padding: 36px;
+    width: 210px;
+    height: 90px;
+    margin: 5px;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+
+    border: 2px solid rgb(155, 149, 149);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.navbar h2:hover {
+    transform: scale(1.1); 
+    background: linear-gradient(to left, #555657, #6dd5ed); 
+  }
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    column-gap: 40px;
+    margin-top:30px
+}
+button{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding-left: 20px;
+    }
+
+    h2 {
+        width: 140px;
+        height: 50px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 40px;
+    }
+
+    button {
+        width: 120px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
