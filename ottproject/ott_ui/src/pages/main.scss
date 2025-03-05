@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+    
+   section{
+    background-color: black;
+    color: white;
+    
+   }
+   .img1 img{
+    width: 100%;
+    height: 500px;
+    opacity: 0.5;
+   }
+   h1,p{
+    text-align: center;
+   }
+   button{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    row-gap: 20px;
+   }
+   button:hover{
+    background-color: brown;
+   }
+   @media only screen and (max-width: 600px){
+    .img1 img{
+    width: 100%;
+    height: 200px;
+    opacity: 0.5;
+    }
+   }
+    

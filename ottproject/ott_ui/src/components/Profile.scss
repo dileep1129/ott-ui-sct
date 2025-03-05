@@ -1,0 +1,283 @@
+// body {
+//     background-color: black;
+//     color: white;
+//     font-family: Arial, sans-serif;
+//     margin: 0;
+//     padding: 0;
+//   }
+   
+//   .container {
+//     width: 90%;
+//     margin: auto;
+//     text-align: center;
+//   }
+   
+//   /* Uncomment these lines to include the navbar styles */
+//   /* .navbar {
+//     display: flex;
+//     justify-content: center;
+//     background-color: #1a1a1a;
+//     padding: 10px 0;
+//   }
+   
+//   .navbar ul {
+//     list-style: none;
+//     padding: 0;
+//     display: flex;
+//     gap: 15px;
+//   }
+   
+//   .navbar li {
+//     display: inline;
+//   }
+   
+//   .navbar a, .navbar button {
+//     color: white;
+//     text-decoration: none;
+//     background: none;
+//     border: none;
+//     cursor: pointer;
+//     font-size: 18px;
+//   }
+   
+//   .navbar a:hover, .navbar button:hover {
+//     color: #00ffcc;
+//   } */
+   
+//   .main {
+//     text-align: center;
+//     padding: 50px 0;
+//   }
+   
+//   .icon {
+//     font-size: 50px;
+//     margin-bottom: 10px;
+//     /* background-color: aquamarine;
+//     border-radius: 50%; */
+//     text-shadow: 0 0 10px #00ffcc;
+//   }
+   
+//   .child, .child2, .child3 {
+//     display: inline-block;
+//     margin: 10px;
+//   }
+   
+//   .child button, .child2 button, .child3 button {
+//     background-color: rgb(120, 120, 121);
+//     color: white;
+//     border: none;
+//     padding: 15px;
+//     font-size: 20px;
+//     cursor: pointer;
+//     border-radius: 10px;
+//     box-shadow: 0 0 15px white;
+   
+//   }
+   
+//   .child h5, .child2 h5, .child3 h5 {
+//     margin-top: 5px;
+//     text-shadow: 0 0 15px white;
+   
+//   }
+   
+//   .parent {
+//     margin-top: 30px;
+//   }
+   
+//   .parent div {
+//     background-color: #222;
+//     padding: 15px;
+//     margin: 10px auto;
+//     width: 80%;
+//     max-width: 400px;
+//     border-radius: 10px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     cursor: pointer;
+//     box-shadow: 0 0 15px #dfdfdf;
+   
+//   }
+//   .parent div:hover {
+//     background-color: #369ff5;
+//   }
+   
+//   .parent h3 {
+//     margin: 0;
+//     font-size: 18px;
+//     text-shadow: 0 0 5px #00ffcc;
+//   }
+   
+//   @media screen and (max-width: 600px) {
+//     .navbar ul {
+//         flex-direction: column;
+//         text-align: center;
+//     }
+   
+//     .parent div {
+//         width: 95%;
+//     }
+//   }
+ 
+body {
+  margin: 0;
+  font-family: Open Sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #bdaaaa;
+  color:#FFFFFFD9;
+}
+code {
+  font-family:Open 'Times New Roman', Times, serif;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon h2 {
+  margin: 0;
+}
+.icon a, .icon svg {
+  text-decoration: none;
+  color: inherit;
+}
+.icon-circle {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 30px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.icon-circle h2 {
+  margin: 0;
+  color: white;
+}
+.icon-circle .icon-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  padding-right: 15px;
+}
+.icon-row .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+  font-size: 20px;
+  color: white;
+}
+.icon.user-one {
+  background-color: rgb(112, 112, 245);
+}
+.icon.user-two {
+  background-color: rgb(243, 202, 127);
+}
+.icon.plus {
+  background-color: lightgrey;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 10px;
+  bottom: 20px;
+}
+.history svg,
+.account-settings svg,
+.sign-out svg,
+.edit-profile svg,
+.subscription-plan svg {
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.item:hover {
+  background: linear-gradient(to right, rgb(46, 33, 35) 0%, rgb(74, 121, 102) 50%, rgb(27, 16, 11) 100%);
+  box-shadow: 0px 4px 8px #fcfafaf5;
+  cursor: pointer;
+  color: white;
+  border: 2px solid rgb(49, 40, 56);
+}
+/* 🔹 Responsive Design for Small Screens */
+@media screen and (max-width: 320px) {
+  .icon-circle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    gap: 10px;
+  }
+  .icon-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .icon-row .icon {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  .item {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+/* 🔹 Tablet (max 768px) */
+@media screen and (max-width: 768px) {
+  .icon-circle {
+    padding: 15px;
+    gap: 12px;
+  }
+  .icon-row .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .item {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+/* 🔹 Laptop (max 1024px) */
+@media screen and (max-width: 1024px) {
+  .icon-circle {
+    padding: 20px;
+  }
+  .icon-row .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .item {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+ 
+ 

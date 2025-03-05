@@ -1,0 +1,147 @@
+// body{
+//     background-image: './images/hot2.avif';
+//     height: 100vh;
+//     width: 100%;
+//     // background-image: url('images/BG.png');
+//     background-repeat: no-repeat;
+//     background-size: 100% 100%;
+//     background-blend-mode: darken;
+//     background-color: rgba(0, 0, 0, 0.5)
+// }
+.media-player {
+    width: 1500px; /* Full width for smaller screens */
+    max-width: 1500px; /* Restrict maximum width */
+    height: 750px; /* Adjust height automatically */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.movie-image {
+    width: 100%; /* Adjust to container width */
+    max-width: 1300px; /* Limit max size */
+    height: 500px; /* Keep aspect ratio */
+    display: block; /* Ensures proper alignment */
+    margin: 10px auto; /* Center the image */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+ 
+ 
+/* Header */
+.media-header h2 {
+    margin: 0;
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    color: #333;
+}
+ 
+/* Main Controls */
+.main-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+ 
+/* Brightness Control */
+.brightness-control {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column; /* Stack items vertically */
+    // margin-top: 385px;
+}
+ 
+.brightness-control label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+ 
+/* Play Button */
+.play-button {
+    font-size: 1.5rem; /* Decrease size for mobile */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    margin-top: 20px;
+    // margin-top: 400px;
+}
+ 
+/* Progress Section */
+.progress-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+ 
+.progress-bar {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+ 
+/* Timestamp */
+.timestamp {
+    font-size: 0.9rem;
+    color: #666;
+}
+ 
+/* Media Options */
+.media-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Wrap buttons for mobile */
+}
+ 
+.media-options button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+ 
+.media-options button:hover {
+    background-color: #0056b3;
+}
+ 
+/* ✅ Mobile Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .media-player {
+        width: 90%; /* Use most of the screen width */
+        height: auto; /* Allow content to adjust */
+        padding: 15px;
+    }
+ 
+    .play-button {
+        font-size: 1.8rem; /* Slightly reduce size */
+        margin-top: 10px;
+    }
+ 
+    .brightness-control {
+        margin-top: 10px;
+    }
+ 
+    .media-options {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+    }
+ 
+    .media-options button {
+        width: 100%; /* Make buttons full width */
+        text-align: center;
+        padding: 10px;
+    }
+}
+ 
+ 
+ 

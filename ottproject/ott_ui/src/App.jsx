@@ -4,11 +4,30 @@ import InputField from './components/InputField';
 import NavBar from './components/NavBar';
 import CustomButton from './components/CustomButton';
 import AppRoutes from './Routes';
+// import Profile from './components/Profile';
+import Content from "./components/Content";
+import Recommended from './components/Recommended';
+import Topmovies from './components/Topmovies';
+// import Cont from './components/Cont';
+// import Recom from "./components/Recommended"
+// import Top from"./components/Topmovies"
+// import Content from"./components/Seri"
+import EpisodeDetails from './Episode';
+// import Video from './components/Video';
+import Signinn from './components/Signin';
+import Signup from './components/Signup';
+// import Profile from './components/Profile';
+import Viode from './components/Viode';
+import Sai from './pages/Sai';
+import TVShows from "./components/TVShows"
+import Movie from "./components/Movie"
+import Profile from './components/Profile';
 
 function App() {
   
 return (
   <div>
+  
   {/* <NavBar />
    <form onSubmit={handleSubmit}>
         <InputField
@@ -46,11 +65,35 @@ return (
         />
         <CustomButton label="Submit Form" type="submit" color="success" />
     </form> */}
-    <AppRoutes />
+    {/* <Profile /> */}
+    
+     {/* <Content />
+    <Recommended /> 
+     <Topmovies />  */}
+     {/* <Signinn />
+     <Viode /> */}
+    {/* <Cont />
+    <Recom />
+    <Top /> */}
+     {/* <Content /> */}
+    {/* <EpisodeDetails /> 
+    <Recommended />
+    <Signup /> */}
+    <TVShows />
+    <Movie />
+    <Profile />
+   
+   
+    {/* <Video /> */}
+    {/* <AppRoutes /> */}
+    {/* <NavBar/> */}
+    {/* <Profile /> */}
+    {/* <Sai /> */}
   </div>
    
 );
 };
+
 
 
 

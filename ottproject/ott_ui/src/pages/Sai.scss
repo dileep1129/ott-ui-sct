@@ -1,0 +1,148 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .main {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  .child, .child2, .child3 {
+    display: inline-block;
+    margin: 10px;
+  }
+  .child button, .child2 button, .child3 button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;  
+  }
+  .child button, .child2 button, .child3 button:hover{
+    cursor: pointer;
+    background-color: darkred;
+  }
+  .child h5, .child2 h5, .child3 h5 {
+    margin-top: 5px;
+    margin-left: 10px;
+    text-shadow: 0 0 15px white;
+   
+  }
+  .parent {
+    margin-top: 30px;
+  }
+  .parent div {
+    background-color: #222;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffcc;
+  }
+  .parent div:hover {
+    background-color: #333;
+  }
+  .parent h3 {
+    margin: 0;
+    font-size: 18px;
+    text-shadow: 0 0 5px #00ffcc;
+  }
+  @media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .parent div {
+        width: 95%;
+    }
+    .child, .child2, .child3 {
+      display: block;
+      margin: 5px;
+      // margin: -50px;
+    }
+   
+    .child button, .child2 button, .child3 button {
+      width: 20%;
+      padding: 15px;
+      font-size: 18px;
+      margin-top: 40px;
+      // margin-right: 200px;
+      margin-left:100px;
+    }
+   
+    .child h5, .child2 h5, .child3 h5 {
+      margin-left: 100px;
+    //   text-align: center;
+      margin-top: 0px;
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 1024px) and (min-width: 600px) {
+    .container {
+      width: 95%;
+    }
+   
+    .main {
+      padding: 30px 0;
+    }
+   
+    .icon {
+      font-size: 40px;
+    }
+   
+    .child, .child2, .child3 {
+      display: inline-block;
+      margin: 5px auto;
+   
+    }
+   
+    .child button, .child2 button, .child3 button {
+      width: 40%;
+      padding: 12px;
+      font-size: 18px;
+      margin-right: 80px;
+    }
+   
+    .child h5, .child2 h5, .child3 h5 {
+      margin-left: 0;
+      text-align: center;
+      // margin-top: -150px;
+      margin-left: 40px;
+    }
+   
+    .parent div {
+      width: 100%;
+      max-width: none;
+      padding: 10px;
+    }
+   
+    .parent h3 {
+      font-size: 16px;
+    }
+  }
+   
+   
+   
+   

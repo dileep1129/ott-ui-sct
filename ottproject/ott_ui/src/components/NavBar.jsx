@@ -1,60 +1,64 @@
-import React, { useState } from "react"; 
-import { Navbar, Container, Nav } from "react-bootstrap"; 
-import { BottomNavigation, BottomNavigationAction } from "@mui/material"; 
-import { Home, PlayCircleOutline, AccountCircle, Archive, Download } from "@mui/icons-material"; 
+// // import React, { useEffect, useState } from "react";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { CiSearch } from "react-icons/ci";
+// import { FaQrcode, FaLanguage, FaUser, FaBars, FaTimes } from "react-icons/fa";
+// import { MdDashboard } from "react-icons/md";
+// // import "./NavBar.css";
+// // import './project3.css';
+// import Home from "./Home";
+// // import Movies from "./First/Movies";
+// // import LiveTV from "./First/LiveTV";
+// // import TVShows from "./First/TVShows";
+// import Movies from "./Movies";
+// import LiveTv from "./LiveTv";
+// import TVShows from "./TVShows";
+// function NavBar() {
+//   const [menuOpen, setMenuOpen] = useState(false);
 
-function NavBar() {
-    const [value, setValue] = useState(0);
+//   useEffect(() => {}, []);
 
-    return (
-      <>
-        
-        <Navbar expand="md" className="bg-dark text-white py-2 d-none d-md-flex">
-          <Container>
-            <Navbar.Brand className="text-white">Logo</Navbar.Brand>
-            <Nav className="ms-auto">
-              <Nav.Link href="#" className="text-white"><Home /></Nav.Link>
-              <Nav.Link href="#" className="text-white"><PlayCircleOutline /></Nav.Link>
-              <Nav.Link href="#" className="text-white"><Archive /></Nav.Link>
-              <Nav.Link href="#" className="text-white"><Download /></Nav.Link>
-              <Nav.Link href="#" className="text-white">
-                <AccountCircle sx={{ fontSize: 30 }} />
-              </Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-  
-        
-        <Container fluid className="position-fixed bottom-0 start-0 w-100 bg-dark d-flex d-md-none">
-          <BottomNavigation
-            showLabels
-            value={value}
-            onChange={(event, newValue) => setValue(newValue)}
-            className="py-2 w-100"
-            sx={{
-              backgroundColor: "#121212",
-              color: "white",
-            }}
-          >
-            <BottomNavigationAction label="Home" icon={<Home />} sx={{ color: "white" }} />
-            <BottomNavigationAction label="Videos" icon={<PlayCircleOutline />} sx={{ color: "white" }} />
-  
-            
-            <div className="position-relative">
-              <div
-                className="position-absolute top-0 start-50 translate-middle p-2 rounded-circle bg-success shadow"
-                style={{ width: "60px", height: "60px", border: "4px solid #121212" }}
-              >
-                <AccountCircle sx={{ fontSize: 40, color: "white" }} />
-              </div>
-            </div>
-  
-            <BottomNavigationAction label="Library" icon={<Archive />} sx={{ color: "white" }} />
-            <BottomNavigationAction label="Downloads" icon={<Download />} sx={{ color: "white" }} />
-          </BottomNavigation>
-        </Container>
-      </>
-    );
-}
+//   return (
+//     <Router>
+//       <div className="app-container">
+//         <h1>Aura <br /><span>Play</span></h1>
+//         <nav className={menuOpen ? "navbar open" : "navbar"}>
+//           <Link to="/" className="home"><h2>Home</h2></Link>
+//           <Link to="/movies"className="Movies"><h2>Movies</h2></Link>
+//           <Link to="/tv-shows"className="TVShows"><h2>TV Shows</h2></Link>
+//           <Link to="/live-tv"className="LiveTV"><h2>Live TV</h2></Link>
+//           <div className="ico">
+//           <Link to="/"className="one"><FaQrcode /></Link>
+//           <Link to="/" className="two"><CiSearch /></Link>
+//           <Link to="/"className="three"><FaLanguage /></Link>
+//           <Link to="/"className="four"><MdDashboard /></Link>
+//           </div>
 
-export default NavBar;
+//         </nav>
+
+//         <div className='right-section'>
+//           <div className='btn'>
+//             <button>Sign In</button>
+//             <i><FaUser /></i>
+//           </div>
+//           <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+//             {menuOpen ? <FaTimes /> : <FaBars />}
+//           </div>
+//         </div>
+
+   
+//       </div>
+//        <main className="content">
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//             <Route path="/movies" element={<Movies />} />
+//             <Route path="/tv-shows" element={<TVShows />} />
+//             <Route path="/live-tv" element={<LiveTv />} />
+//             {/* <Route path="/Listgroup" element={<Listgroup />} /> */}
+//             {/* <Route path="/Subscription" element={<Subscription />} /> */}
+//           </Routes>
+//         </main>
+//     </Router>
+//   );
+// }
+
+// export default NavBar;
