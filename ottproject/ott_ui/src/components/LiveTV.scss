@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #0f0f0f;
+    color:white;
+    overflow-x: hidden;
+  }
+  code {
+    font-family:Open Sans;
+  }
+  .parent1{
+    background-color: #0f0f0f;
+    color: white;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .eternal-voyage1 {
+    background: url("/components/back live.webp") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: white;
+    padding: 20px;
+  }
+  .overlay1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }  
+  .content1 {
+    max-width: 500px;
+    padding-left: 50px;
+  }
+  .content-left-align1{
+    padding-top: 20%;
+  }
+ @media (max-width: 768px) {
+    .eternal-voyage1 {
+      background-position: center center;
+      background-size: 100% 100%;
+      justify-content: center;
+      text-align: center;
+    }  
+    .content1 {
+      padding-left: 0;
+    }
+  }
+  .description1{
+    color: rgb(250, 244, 244);
+    padding: 0 20px 20px 20px;
+  }
+  .buttons1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    text-align: left;
+  }  
+  .buttons1 p {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    padding: 8px 12px;
+    color: #0f0f0f;
+    background-color: aqua;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }  
+  .buttons1 p:hover {
+    background-color: #00cccc;
+  }
+  @media (max-width: 768px) {
+    .buttons1 {
+      flex-direction: column;
+      align-items: center;
+    }  
+    .buttons1 p {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .buttons1 p {
+      width: 100%;
+      font-size: 14px;
+      padding: 6px 8px;
+    }  
+  }
+  .Reco1 .synop{
+    gap: 30px;
+  }
+  .title1{
+    color:rgb(236, 17, 2);
+    font-family: sans-serif;
+    padding: 20px 20px 20px 20px;
+  }  
+  @media (max-width: 768px) {  
+    .recom1{
+      text-align: left;
+      padding-left: 10px;
+      font-size: 16px;
+    }
+    .re1{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .watch-more1 {
+      font-size: 12px;
+      padding: 0;
+      color: rgb(250, 248, 248);
+    }  
+    .Reco1{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }  
+    .Reco1 .im11{
+      height: 40vh;
+    }
+  }
+  .Reco1 {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }  
+  .Reco1 .im11 {
+    width: 20%;
+    border-radius: 10px;
+  }  
+  @media (max-width: 1024px) {
+    .Reco1 {
+      gap: 40px;
+    }
+    .Reco1 .im11 {
+      width: 25%;
+    }
+  }  
+  @media (max-width: 768px) {
+    .Reco1 {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .Reco1 .im11 {
+      width: 50%;
+    }
+  }  
+  @media (max-width: 480px) {
+    .Reco1 .im11 {
+      width: 80%;
+    }
+  }
+  .synop {
+    width: 60%;
+  }
+@media (max-width: 768px) {
+    .Reco1 {
+      flex-direction: column;
+      text-align: center;
+    }
+    .Reco1 .im11 {
+      width: 80%;
+    }
+  }
+  .im11:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px white;
+  }
+  .recom1{
+   padding: 20px 20px 10px 30px;
+    text-shadow: 2px 2px rgb(231, 10, 10);
+  }
+  .re1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .re11{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+  }
+  .watch-more1 {
+    margin: 0;
+    cursor: pointer;
+    padding: 25px 45px 0 0;
+    text-decoration: none;
+    color: white;
+  }
+  .watch-more1:hover{
+    transform: scale(1.1);
+    transition: all 0.4s;
+    text-shadow: 2px 2px red;
+}
+  @media (min-width: 1600px) {
+    .Reco1{
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  @media (max-width: 1024px) {  
+    .Reco1{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 768px) {  
+    .Reco1{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .recom1{
+      text-align: center;
+      padding-left: 0;
+   
+    }
+  }
+  @media (max-width: 480px) {  
+    .Reco1{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+   

@@ -309,6 +309,9 @@
 // }
 
 // export default Action;
+
+
+
 import React, { useState } from "react";
 
 const styles = {
@@ -436,6 +439,185 @@ function Action() {
 
 export default Action;
 
+
+
+
+
+// import { border, borderRadius } from "@mui/system";
+// import React from "react";
+
+
+
+
+// const styles = {
+//   container: {
+//     display: 'flex',
+//     backgroundColor:'black',
+//     flexDirection: 'row',
+//     height:'130vh',
+//     // justifyContent: '',
+//   },
+//   imgGrid: {
+//     display: 'flex',
+    
+//     flexDirection: 'row', // Ensures images appear in a single row
+//     justifyContent: 'flex-start', // Align images to the left
+//     flexWrap: 'wrap', // Allows wrapping if necessary
+//     gap: '20px', // Adds spacing between images
+//     width:'100%',
+//     marginTop:'30px',
+//     marginLeft:'50px',
+
+//   },
+//   imgCard: {
+//     display: 'flex',
+//     alignItems: 'center',
+//     // width: '450px', // You can adjust the size as needed
+//     height: 'auto',
+//   },
+//   img: {
+//     // width: '100%',
+//     border:'none',
+//     borderRadius:'10px',
+//     height: 'auto',
+//     objectFit: 'cover',
+//     width: '300px', // You can adjust the size as needed
+
+//   },
+//   title: {
+//     color:'red',
+//     fontSize: '54px',
+//     fontWeight: 'bold',
+//     marginBottom: '20px',
+//     marginLeft:'90px',
+
+//   },
+// };
+
+
+// function Action() {
+//   return (
+    
+//     <div style={styles.container}>
+//       <div>
+      
+      
+//       <div style={styles.div}>
+//         <p style={styles.title}>Action</p>
+//       </div>
+       
+
+//       <div style={styles.imgGrid}>
+//         <div style={styles.imgCard}>
+//           <a
+//             href="https://www.youtube.com/watch?v=abcd1234"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div>
+
+//         <div style={styles.imgCard}>
+//           <a
+//             href="https://www.youtube.com/watch?v=efgh5678"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div>
+
+//         <div style={styles.imgCard}>
+//           <a
+//             href="https://www.youtube.com/watch?v=mnop3456"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div>
+
+//         <div style={styles.imgCard}>
+//           <a
+//             href="https://www.youtube.com/watch?v=qrst7890"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div>
+
+//         <div style={styles.imgCard}>
+//           <a
+//             href= "https://www.youtube.com/watch?v=uvwx1234"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div> 
+//       </div>      
+
+//       <div style={styles.imgGrid}>
+//         <div style={styles.imgCard}>
+//           <a
+//             href="https://www.youtube.com/watch?v=abcd1234"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div>
+
+//         <div style={styles.imgCard}>
+//           <a
+//             href="https://www.youtube.com/watch?v=efgh5678"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div>
+
+//         <div style={styles.imgCard}>
+//           <a
+//             href="https://www.youtube.com/watch?v=mnop3456"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div>
+
+//         <div style={styles.imgCard}>
+//           <a
+//             href="https://www.youtube.com/watch?v=qrst7890"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div>
+
+//         <div style={styles.imgCard}>
+//           <a
+//             href= "https://www.youtube.com/watch?v=uvwx1234"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <img src="/action1.jpg" alt="Movie" style={styles.img} />
+//           </a>
+//         </div> 
+//       </div>      
+
+//     </div>
+//     </div>
+    
+//   );
+// }
+
+// export default Action;
 
 
 

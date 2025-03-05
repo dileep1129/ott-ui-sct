@@ -1,186 +1,180 @@
-
-
-
-
 body {
+    background-color: rgb(8, 8, 8);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
 }
- 
- 
-header {
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    /* background-color: #1c1c1c; */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
 }
- 
- 
-header h1 {
-    font-size: 24px;
-    color: #2e0de6;
-    font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-}
-span{
-    color: #0da9d8;
- 
-}
- 
-.nav-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    padding: 0;
+
+h1 {
+    font-size: 20px;
     margin: 0;
+    color: white;
+    margin-left: 30px;
 }
- 
-.nav-menu ul li {
-    display: flex;
- 
+
+h1 span {
+    color: #f39c12;
 }
- 
-.nav-menu ul li a {
+
+.navbar  {
+    color: white;
     text-decoration: none;
+    margin: 0 20px;
+    padding: 0 10px;
+}
+
+p {
     color: white;
-    font-size: 18px;
-    transition: 0.3s;
+    font-size: 30px;
+
 }
- 
-.nav-menu ul li a:hover {
-    color: #ffcc00;
+
+ .ico {
+    border: 2px solid rgb(150, 148, 148);
+    border-radius: 30px;
 }
- 
-.nav-menu ul li h4,.nav-menu ul li h5 {
-    margin: 0;
-    display: flex;
+
+.one, .two, .three, .four {
+    margin: 17px;
+    font-size: 10px;
+    color: white;
+} 
+.ico {
     align-items: center;
+    display: flex;
+    border: 2px solid rgb(150, 148, 148);
+    border-radius: 20px;
+}
+h4{
+    font-size: 30px;
+}
+.one, .two, .three, .four {
+    margin: 17px;
+    font-size: 10px;
     color: white;
-    cursor: pointer;
-    transition: 0.3s;
 }
- 
-.nav-menu ul li h4:hover,
-.nav-menu ul li h5:hover {
-    color: #ffcc00;
-}
- 
+
 .right-section {
     display: flex;
     align-items: center;
-    gap: 15px;
+    text-align: center;
+    gap: 20px;
 }
 
- 
 .btn {
     display: flex;
     align-items: center;
     gap: 10px;
-   
+    margin: 30px;
 }
- 
+
 .btn button {
-    background-color: #108fe4;
-    color: black;
+    padding: 10px 30px;
+    background-color: #f39c12;
     border: none;
-    padding: 8px 15px;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
- 
-.btn button:hover {
-    background-color: #e6b800;
-}
-i{
-   
-    background-color: aquamarine;
-    width: 60px;
+    color: white;
     align-items: center;
     text-align: center;
-    padding: 10px;
-    border:none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 50px;
-    font-size: 10px;
+    cursor: pointer;
 }
- 
- 
-.btn i {
+
+i {
+    color: red;
+    background-color: rgb(167, 159, 160);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-    transition: 0.3s;
 }
- 
-.btn i:hover {
-    color: #ffcc00;
-}
- 
- 
+
 .menu-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     color: white;
 }
- 
- 
+
 @media (max-width: 768px) {
-   
- 
- 
-    .nav-menu {
-        position: absolute;
-        top: 80px;
-        left: 30;
-        width: 200px;
-        display: none;
-        flex-direction: column,row;
-        text-align: center;
-        justify-content: center;
-        padding: 10px 0;
-        background-color: rgb(0, 0, 0);
-    }
- 
-    .nav-menu.open {
-        display: flex;
-    }
- 
-    .nav-menu ul {
+    .navbar {
         flex-direction: column;
-        gap: 15px;
+        align-items: flex-start;
+       
     }
- 
-    .right-section {
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar.open a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .ico {
+        display: none;
+    }
+
+    .navbar.open .ico {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
         width: 100%;
+        align-items: flex-start;
     }
- 
-    .btn {
-        margin-right: auto;
+
+    .right-section {
+        width: 100%;
+        justify-content: space-between;
     }
-    .btn button{
-        font-size: 10px;
-    }
-    i{
-        font-size: 10px;
-    }
- 
+
     .menu-toggle {
         display: block;
-    
-      
-    
     }
 }
- 
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar.open .ico {
+        flex-direction: row; /* Change to row for mobile devices */
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .btn button {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    i {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+}
