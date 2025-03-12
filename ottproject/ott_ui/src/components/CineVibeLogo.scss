@@ -1,0 +1,168 @@
+/*
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+  }
+  body{
+    background-image: url(https://img.freepik.com/premium-photo/ott-concept-with-copy-space-ott-cloud-setup-video-playback-ott-technology-is-method-providing-video-services-through-social-networks-internet-3d-render_507676-1899.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ }
+ 
+ 
+ 
+ 
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+ 
+  .nav-link {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+ 
+  .nav-link:hover {
+    color: #e55a00;
+  }
+ 
+  .signup-button {
+    color: white;
+    background-color: red;
+    font-weight: 200;
+    border-radius: 5rem;
+    padding: 0.7rem 1.4rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+ 
+  .signup-button:hover {
+    background-color: darkred;
+  }
+ 
+  .main-content {
+    margin: 10rem auto;
+    padding: 1rem;
+    text-align: center;
+  }
+ 
+   .welcome-message {
+    color: white;
+    font-size: 2rem;
+    font-family: "canveat";
+  }
+ 
+ 
+  .welcome-message {
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -20%);
+    color: #ffffff;
+    animation: fadeInOut 6s infinite ease-in-out;
+}
+ 
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+      transform: translate(-50%, -40%);
+  }
+  50% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+  }
+} */
+ 
+ 
+ 
+ 
+@keyframes fadeIn {
+    0% { opacity: 4; transform: translateY(20px); }
+    50% { opacity: 0.5; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+   
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px #fff, 0 0 10px #cef00f, 0 0 15px #379b09; }
+    50% { text-shadow: 0 0 15px #fff, 0 0 30px #09ce44, 0 0 45px #ff00ff; }
+    100% { text-shadow: 0 0 5px #fff, 0 0 10px #f7f304, 0 0 15px #09fa81; }
+  }
+   
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-size: 8rem;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+   
+  .logo-text {
+    display: flex;
+  }
+   
+  .letter {
+    opacity: 0;
+    animation: fadeIn 0.9s forwards, glow 4s infinite alternate;
+  }
+   
+  .visible {
+    opacity: 1;
+  }
+.entertainment-text{
+    font-weight: bold;
+  color: #b3acac;
+  text-decoration: none;
+  font-style:italic;
+  border: none;
+  border-bottom: 2px solid white;
+  background:transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
+    position: absolute;
+    top: 0; /* Positions the text at the top */
+    left: 87%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Ensures perfect horizontal centering */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+ 
+}
+.Tx{
+  font-weight: bold;
+  color: #b3acac;
+  text-decoration: none;
+  font-style:italic;
+  
+  border: none;
+  border-bottom: 2px solid white;
+  background:transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
+    position: absolute;
+    top: 0; /* Positions the text at the top */
+    left: 93%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Ensures perfect horizontal centering */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+ 
+}
+.entertainment-text:hover {
+  
+    cursor: pointer;
+  }
