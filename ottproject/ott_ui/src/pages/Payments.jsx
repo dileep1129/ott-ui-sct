@@ -21,7 +21,6 @@ function PaymentPage({ trial }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Replace this with your actual payment processing logic.
     console.log(
       "Payment details submitted:",
       paymentDetails,
@@ -35,20 +34,18 @@ function PaymentPage({ trial }) {
     );
   };
 
-  // Payment option card style: black background with white text.
   const optionStyle = {
     padding: "10px 20px",
     border: "2px solid #fff",
     borderRadius: "5px",
     cursor: "pointer",
-    margin: "0 5px",
+    margin: "5px",
     flex: "1",
     textAlign: "center",
-    color: "#fff", // white text
-    backgroundColor: "#000", // black background
+    color: "#fff",
+    backgroundColor: "#000",
   };
 
-  // Selected option style: dark gray background with a green border.
   const selectedStyle = {
     ...optionStyle,
     borderColor: "#28A745",
@@ -56,27 +53,32 @@ function PaymentPage({ trial }) {
     fontWeight: "bold",
   };
 
-  // Common style for inputs: dark background with white text.
   const inputStyle = {
     width: "100%",
-    padding: "8px",
-    marginTop: "5px",
+    padding: "10px",
+    marginTop: "8px",
     backgroundColor: "#333",
     color: "#fff",
     border: "1px solid #555",
     borderRadius: "4px",
+    boxSizing: "border-box",
   };
 
   return (
     <div
       style={{
         padding: "20px",
-        maxWidth: "500px",
-        margin: "40px auto",
-        background: "#000", // container background is black
+        maxWidth: "500px", // Default maxWidth for laptops
+        width: "90%", // Default width for mobile
+        margin: "20px auto",
+        background: "#000",
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(255, 255, 255, 0.1)",
-        color: "#fff", // default text color is white
+        color: "#fff",
+        // "@media (min-width: 768px)": { // Media query for laptops
+        //   maxWidth: "500px",
+        //   width: "auto" // change back to auto for larger screens.
+        // },
       }}
     >
       <h1 style={{ textAlign: "center", marginBottom: "20px" }}>
@@ -91,7 +93,6 @@ function PaymentPage({ trial }) {
           marginTop: "20px",
         }}
       >
-        {/* Full Name */}
         <label>
           Full Name:
           <input
@@ -106,7 +107,6 @@ function PaymentPage({ trial }) {
         </label>
 
         {trial ? (
-          // For trial mode, show Email field
           <label>
             Email:
             <input
@@ -121,12 +121,17 @@ function PaymentPage({ trial }) {
           </label>
         ) : (
           <>
-            {/* Payment method selection */}
             <div style={{ margin: "20px 0" }}>
               <p style={{ marginBottom: "10px", color: "#fff" }}>
                 Select Payment Method:
               </p>
-              <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                }}
+              >
                 <div
                   style={paymentMethod === "card" ? selectedStyle : optionStyle}
                   onClick={() => setPaymentMethod("card")}
@@ -156,7 +161,6 @@ function PaymentPage({ trial }) {
 
             {paymentMethod === "card" ? (
               <>
-                {/* For card payments, show Email and card details */}
                 <label>
                   Email:
                   <input
@@ -207,7 +211,6 @@ function PaymentPage({ trial }) {
                 </label>
               </>
             ) : (
-              // For UPI-based payments, show a UPI ID field.
               <label>
                 UPI ID:
                 <input
@@ -231,7 +234,7 @@ function PaymentPage({ trial }) {
             border: "none",
             borderRadius: "5px",
             backgroundColor: "#28A745",
-            color: "#000", // button text in black
+            color: "#000",
             fontSize: "1rem",
             cursor: "pointer",
           }}
@@ -245,8 +248,6 @@ function PaymentPage({ trial }) {
         </Link>
       </div>
     </div>
-    
   );
 }
-
 export default PaymentPage;
