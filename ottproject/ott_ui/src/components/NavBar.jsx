@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom"; // Use NavLink for active link functionality
 import { FaQrcode, FaUser, FaBars, FaTimes } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
-import "./Navbar.scss";
+import "./NavBar.scss";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
