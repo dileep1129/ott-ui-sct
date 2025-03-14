@@ -1,100 +1,229 @@
-body{
-  margin: 0;
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #635656;
-  color: #FFFFFFD9;
-}
-.icon {
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-}
-.icon h4 {
-  margin: 0;
-  justify-content: center;
-}
-.icon.user-created {
-  background-color: #28a745; /* Change this color to distinguish the user-created icon */
-  cursor: pointer;
-  transition: transform 0.3s ease;
+// body{
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   background-color: #635656;
+//   color: #FFFFFFD9;
+// }
+// .icon {
+//   display: flex;
+//   align-items: center;
+//   column-gap: 10px;
+// }
+// .icon h4 {
+//   margin: 0;
+//   justify-content: center;
+// }
+// .icon.user-created {
+//   background-color: #28a745; /* Change this color to distinguish the user-created icon */
+//   cursor: pointer;
+//   transition: transform 0.3s ease;
 
-  &:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
-  }
-}
+//   &:hover {
+//     transform: scale(1.1); /* Slightly enlarge the icon on hover */
+//   }
+// }
 
-.icon a, .icon svg {
-  text-decoration: none;
-  color: inherit;
-}
-.icon-circle {
-  display: flex;
-  flex-direction: row; 
-  align-items: center; 
-  justify-content: center; 
-  gap: 10px; 
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  padding-left: 30px;
-  margin-top: 15px;
-  margin-bottom: 50px;
-}
+// .icon a, .icon svg {
+//   text-decoration: none;
+//   color: inherit;
+// }
+// .icon-circle {
+//   display: flex;
+//   flex-direction: row; 
+//   align-items: center; 
+//   justify-content: center; 
+//   gap: 10px; 
+//   color: white;
+//   padding: 10px;
+//   border-radius: 10px;
+//   padding-left: 30px;
+//   margin-top: 15px;
+//   margin-bottom: 50px;
+// }
 
-.icon-circle h4 {
-  margin: 0;
-  color: white;
-}
+// .icon-circle h4 {
+//   margin: 0;
+//   color: white;
+// }
 
-.icon-circle .icon-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-left: auto;
-  padding-right: 15px;
-}
+// .icon-circle .icon-row {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   margin-left: auto;
+//   padding-right: 15px;
+// }
 
-.icon-row .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 15%;
-  font-size: 20px;
-  color: white;
-}
-.icon.user-one {
-  background-color: rgb(112, 112, 245);
-}
-.icon.user-two {
-  background-color: rgb(243, 202, 127);
-}
-.icon.plus {
-  background-color: lightgrey;
-}
+// .icon-row .icon {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 15%;
+//   font-size: 20px;
+//   color: white;
+// }
+// .icon.user-one {
+//   background-color: rgb(112, 112, 245);
+// }
+// .icon.user-two {
+//   background-color: rgb(243, 202, 127);
+// }
+// .icon.plus {
+//   background-color: lightgrey;
+// }
+
+
+// .item {
+//   display: flex;
+//   justify-content:  space-evenly;
+//   // align-items: center;
+//   gap: 10px;
+//   border: 2px solid white;
+//   padding: 10px;
+//   border-radius: 5px;
+//   background-color: black;
+//   color: white;
+//   font-size: 18px;
+//   width: 100%;
+//   box-sizing: border-box;
+//   text-align: center;
+//   margin-bottom: 10px;
+//   bottom: 40px;
+// }
+
+// .history svg,
+// .account-settings svg,
+// .sign-out svg,
+// .edit-profile svg,
+// .subscription-plan svg {
+//   font-size: 20px;
+// }
+
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 10px;
+//   max-width: 500px;
+//   margin: 20px auto;
+// }
+
+// .item:hover {
+//   background: linear-gradient(to right, rgb(83, 78, 79) 0%, rgb(21, 22, 22) 50%, rgb(51, 40, 36) 100%);
+//   box-shadow: 0px 4px 8px #fcfafaf5;
+//   cursor: pointer;
+//   color: white;
+//   border: 2px solid rgb(49, 40, 56);
+// }
+
+// /* 🔹 Responsive Design for Small Screens */
+// @media screen and (max-width: 320px) {
+//   .icon-circle {
+//     flex-direction: column;
+//     align-items: center;
+//     text-align: center;
+//     padding: 15px;
+//     gap: 10px;
+//   }
+
+//   .icon-row {
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 8px;
+//   }
+
+//   .icon-row .icon {
+//     width: 35px;
+//     height: 35px;
+//     font-size: 14px;
+//     margin-bottom: 10px;
+//     margin-right: 15px;
+//   }
+
+//   .item {
+//     font-size: 14px;
+//     padding: 5px;
+//   }
+// }
+
+// /* 🔹 Tablet (max 768px) */
+// @media screen and (max-width: 768px) {
+//   .icon-circle {
+//     padding: 15px;
+//     gap: 12px;
+//   }
+
+//   .icon-row .icon {
+//     width: 45px;
+//     height: 45px;
+//     font-size: 16px;
+//   }
+
+//   .item {
+//     font-size: 16px;
+//     padding: 10px;
+//   }
+// }
+
+// /* 🔹 Laptop (max 1024px) */
+// @media screen and (max-width: 1024px) {
+//   .icon-circle {
+//     padding: 20px;
+//   }
+
+//   .icon-row .icon {
+//     width: 50px;
+//     height: 50px;
+//     font-size: 18px;
+//   }
+
+//   .item {
+//     font-size: 18px;
+//     padding: 12px;
+//   }
+// }
+
+// /* Styling the input fields with white background and black text */
+// input, textarea {
+//   background-color: white;
+//   color: black;
+//   border: 2px solid #ccc;
+//   padding: 10px;
+//   border-radius: 5px;
+//   width: 100%;
+//   font-size: 16px;
+//   box-sizing: border-box;
+//   margin-top: 20px; /* Add space above the input fields */
+// }
+
+// input:focus, textarea:focus {
+//   outline: none;
+//   border-color: #6c757d;
+// }
 
 
 .item {
   display: flex;
-  justify-content:  space-evenly;
-  // align-items: center;
+  justify-content: space-evenly;
   gap: 10px;
   border: 2px solid white;
   padding: 10px;
   border-radius: 5px;
-  background-color: black;
-  color: white;
+  background-color: rgb(147, 229, 198);
+  color: black; /* Ensures text inside item is black */
   font-size: 18px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 10px;
   bottom: 40px;
+  text-decoration: none; /* Prevents any text decoration */
 }
-
+ 
 .history svg,
 .account-settings svg,
 .sign-out svg,
@@ -102,7 +231,7 @@ body{
 .subscription-plan svg {
   font-size: 20px;
 }
-
+ 
 .container {
   display: flex;
   flex-direction: column;
@@ -111,7 +240,7 @@ body{
   max-width: 500px;
   margin: 20px auto;
 }
-
+ 
 .item:hover {
   background: linear-gradient(to right, rgb(83, 78, 79) 0%, rgb(21, 22, 22) 50%, rgb(51, 40, 36) 100%);
   box-shadow: 0px 4px 8px #fcfafaf5;
@@ -119,7 +248,7 @@ body{
   color: white;
   border: 2px solid rgb(49, 40, 56);
 }
-
+ 
 /* 🔹 Responsive Design for Small Screens */
 @media screen and (max-width: 320px) {
   .icon-circle {
@@ -129,13 +258,13 @@ body{
     padding: 15px;
     gap: 10px;
   }
-
+ 
   .icon-row {
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
   }
-
+ 
   .icon-row .icon {
     width: 35px;
     height: 35px;
@@ -143,50 +272,50 @@ body{
     margin-bottom: 10px;
     margin-right: 15px;
   }
-
+ 
   .item {
     font-size: 14px;
     padding: 5px;
   }
 }
-
+ 
 /* 🔹 Tablet (max 768px) */
 @media screen and (max-width: 768px) {
   .icon-circle {
     padding: 15px;
     gap: 12px;
   }
-
+ 
   .icon-row .icon {
     width: 45px;
     height: 45px;
     font-size: 16px;
   }
-
+ 
   .item {
     font-size: 16px;
     padding: 10px;
   }
 }
-
+ 
 /* 🔹 Laptop (max 1024px) */
 @media screen and (max-width: 1024px) {
   .icon-circle {
     padding: 20px;
   }
-
+ 
   .icon-row .icon {
     width: 50px;
     height: 50px;
     font-size: 18px;
   }
-
+ 
   .item {
     font-size: 18px;
     padding: 12px;
   }
 }
-
+ 
 /* Styling the input fields with white background and black text */
 input, textarea {
   background-color: white;
@@ -199,9 +328,11 @@ input, textarea {
   box-sizing: border-box;
   margin-top: 20px; /* Add space above the input fields */
 }
-
+ 
 input:focus, textarea:focus {
   outline: none;
   border-color: #6c757d;
 }
-
+ 
+ 
+ 
