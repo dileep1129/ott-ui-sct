@@ -62,9 +62,9 @@ function NavBar() {
         </div>
         <div className="right-section">
           <div className="btn">
-            <NavLink to="/Login">
+            {/* <NavLink to="/Login">
               <button>Login</button>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/user">
               <i>
                 <FaUser />
