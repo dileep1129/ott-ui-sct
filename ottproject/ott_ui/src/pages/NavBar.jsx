@@ -10,7 +10,13 @@ function NavBar() {
     return (
         <div className="app-container">
             <nav className={menuOpen ? "navbar open" : "navbar"}>
-                <h4>Star <span>ZZ</span></h4>
+                {/* <h4>Star <span>ZZ</span></h4> */}
+
+                <NavLink href="#link" className="px-4 ">
+              {" "}
+              <img src="/assets/Zimg.png" alt="ott" width={'70px'} />{" "}
+            </NavLink>
+            
                 {/* Use NavLink with activeClassName for active highlighting */}
                 <NavLink 
                     to="/Home" 
@@ -58,9 +64,9 @@ function NavBar() {
                 
                 <div className="right-section">
                     <div className="btn">
-                        <NavLink to="/Login">
+                        {/* <NavLink to="/Login">
                             <button>Login</button>
-                        </NavLink>
+                        </NavLink> */}
                         <NavLink to="/user">
                             <i><FaUser /></i>
                         </NavLink>
